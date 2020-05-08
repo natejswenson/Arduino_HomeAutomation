@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    left:0;
+    right:0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font: 16px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  section {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0px 5px;
+  }
+  
+  li {
+    line-height: 1.4 ;
+  }
+  
+  
+  header {
+    position: absolute;
+    height: 55px;
+    top: 0;
+    display:block;
+  width: 100%;
+  margin: 0 auto;
+  left:5px ;
+  right: 5px;
+  }
+  
+  header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    display: inline;
+    vertical-align: middle;
+  }
+  
+  
+  header h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  /* Main Content
+  */
+  
+  #main_content {
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+  section img {
+    max-width: 100%
+  }
+  
+  h1, h2 {
+    font-weight: normal;
+    font-family: Arial, Helvetica;
+    color: #717171
+  }
+  h3 {
+    font-weight: normal;
+    font-family: Helvetica;
+    color:#717171
+  }
+  h4 {
+    font-weight: normal;
+    font-family: Helvetica;
+    color: #717171
+  }
+  h5 {
+    font-weight: normal;
+    font-family: Helvetica;
+    color: rgb(255, 1, 1);
+  }
+  h6 {
+    font-weight: normal;
+    font-family: Helvetica;
+    color: #717171
+  }
+  #main_content h1 {
+    font-size: 35px;
+  }
+  
+  #main_content h2 {
+    font-size: 18px;
+  }
+  
+  #main_content h3 {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #main_content h4 {
+    font-size: 14px;
+  
+  }
+  
+  #main_content h5 {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+  }
+  
+  #main_content h6 {
+    font-size: 11px;
+    margin: 0 0 0px 0;
+  }
+  
+  .btn_FrontPage{
+    display: inline-block;
+    background: #C31515;
+    width:100%;
+    max-width: 800px;
+    padding: 8px 18px;
+    border-radius: 1px;
+    border: 1px solid #C31515;
+    border-bottom: 1px solid #C31515;
+    border-top: 1px solid #C31515;
+    color: white;
+    font-family:  Helvetica;
+    font-size: 13px;
+    text-decoration: none;}
+  
+    .btn {
+    background: #C31515;
+    width: 49%;
+    float:right;
+    padding:6px;
+    border-radius: 3px;
+    border: 1px solid #C31515;
+    border-bottom: 2px solid #C31515;
+    border-top: 2px solid #C31515;
+    color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .btn2 {
+    background: black;
+    width: 49%;
+    float:left;
+    padding:6px;
+    border-radius: 3px;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+  }
+    .btn4 {
+      background: white;
+      width: 49%;
+      float:left;
+      padding:6px;
+      border-radius: 3px;
+      border: 1px solid white;
+      border-bottom: 2px white;
+      border-top: 2px solid white;
+      color: white;
+      font-family:  Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+    }
+  
+    .btn3 {
+      background: lightgray;
+      width: 90%;
+      padding:3px;
+      border-radius: 2px;
+      border: 1px solid lightgray;
+      border-bottom: 2px solid lightgray;
+      border-top: 2px solid lightgray;
+      color: white;
+      font-family:  Arial, Helvetica, sans-serif;
+      font-size: 9px;
+      text-decoration: none;
+  }
+  .dropdown {
+      position: relative;
+      display: inline;
+  }
+  .dropdown-content a:hover {color: #E37222; font-weight: bold;}
+  
+  .dropdown-content {
+      display: none;
+      position: relative;
+      color:#f5f5f5;
+      background-color: #808080;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content a {
+      color: #f5f5f5;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+      background-color: #B01E5B;
+  }
+  .top{
+    height:100%;
+    width:100%;
+  }
+  .btn:hover {
+    background-color: #36bd48
+  }
+    .btn2:hover {
+      background-color: #6c726d
+    }
+      .btn3:hover {
+        background-color: #303130
+  }
+  a {
+    color: #551EB0;
+  }
+  
+  .footer {
+    position:absolute;
+    height:100px;
+   bottom: 0;
+      display: table;
+      width: 100%;
+      margin: 0 auto;
+      right:0;
+      left: 0;
+  
+    }
+  
+  .header {
+  display:table;
+  position:absolute;
+  top: 0;
+  height:70;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #21B01E;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  left:0;
+  right:0;
+  
+  }
+  
+  .inline{
+  display: inline-block;
+  white-space: nowrap;
+  };
+  .Maincontainer{
+    height:auto;
+    top:0;
+    display:table;
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    width: 99%;
+    max-width: 900px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    }
+  
+    .leftpane {
+      display: table-cell;
+      width: 50%;
+      padding: 5px 0px 0px 0px;
+      float:left;
+      border-collapse: collapse;
+  }
+  
+  .rightpane {
+    display: table-cell;
+    width: 45%;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+  }
+  .pane-20 {
+    display: table-cell;
+    width: 20%;
+    padding: 0px 0px 0px 0px;
+    border-right: .5px solid grey;
+    position: relative;
+    float: left;
+    border-collapse: collapse;
+  }
+  .leftpane-ltgrey {
+    display: table-cell;
+    width: 100%;
+    padding: 15px;
+    float:left;
+    background-color:rgb(241, 239, 239);
+    border-collapse: collapse;
+  }
+  .pane-left-50 {
+    display: table-cell;
+    width: 50%;
+    padding: 0px 0px 0px 0px;
+    border-bottom: .5px solid grey;
+    position: relative;
+    float: left;
+    border-collapse: collapse;
+  }
+  .p     {
+    display: table-cell;
+    width: 50%;
+    padding: 0px 0px 0px 0px;
+    border-bottom: .5px solid grey;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+  }
+  .pane-left-50-NoBorder {
+    display: table-cell;
+    width: 50%;
+    padding: 0px;
+    position: relative;
+    float: left;
+    border-collapse: collapse;
+  }
+  .pane-right-50-NoBorder {
+    display: table-cell;
+    width: 50%;
+    padding: 0px;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+  }
+  .pane-80 {
+    display: table-cell;
+    width: 77%;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+  }
+  .pane-right-33 {
+    display: table-cell;
+    width: 33%;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    float: right;
+    text-align: right;
+    border-collapse: collapse;
+  }
+  .pane-left-33 {
+    display: table-cell;
+    width: 33%;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    text-align: left;
+    float: left;
+    border-collapse: collapse;
+  }
+  .checked {
+    color:#C31515;
+  }
+  .pane-left-34 {
+    display: table-cell;
+    width: 34%;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    float: left;
+    border-collapse: collapse;
+  }
+  .rightpane-border {
+    display: table-cell;
+    border-top: .5px solid grey;
+    border-bottom: .5px solid grey;
+    width: 45%;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+  }
+  #myform {
+    text-align: center;
+    width: 45%;
+    border-radius: 3px;
+    float: left;
+    padding: 5px;
+    border: .5px solid #ccc;
+  }
+  .qty {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+  }
+  input.qtyplus { width:25px; height:25px; border-radius: 12.5px;color: white;background: lightgray}
+  input.qtyminus { width:25px; height:25px;border-radius: 12.5px; color:white;background: lightgray}

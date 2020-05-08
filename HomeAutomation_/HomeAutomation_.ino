@@ -98,23 +98,7 @@ void SendAuthentificationpage(EthernetClient &client){
 **************************MAIN LOOP***************************************************************
 **************************************************************************************************/
 void loop() {
-/**************************PIR SENSOR CODE******************************************************/  
-pir_pinstate = digitalRead(pir_pin); 
-if (pir_value == HIGH) {
-  digitalWrite(pir_led, HIGH);
-  if (pir_value== LOW) {
-    Serial.println("Motion detected!");
-    pir_value = HIGH;
-  }
-} else {
-  digitalWrite(pir_led, LOW); // turn LED OFF
-  if (pir_value == HIGH){
-    // we have just turned of
-    Serial.println("Motion ended!");
-    // We only want to print on the output change, not state
-    pir_value = LOW;
-  }
-}
+
   EthernetClient client = server.available();
   if (client) {
     Serial.println("new client");
@@ -129,7 +113,14 @@ if (pir_value == HIGH) {
         linebuf[charcount]=c;
         if (charcount<sizeof(linebuf)-1) charcount++;
         Serial.write(c);
-       
+        /**************************Website Build Code ******************************************************/
+        if (c == '\n' && currentLineIsBlank) {
+          if (authentificated)
+            SendOKpage(client);
+          else
+            SendAuthentificationpage(client);  
+          break;
+        }
         /**************************Athentication Code******************************************************/
          if (c == '\n') {
           currentLineIsBlank = true;
@@ -143,16 +134,22 @@ if (pir_value == HIGH) {
           // you've gotten a character on the current line
           currentLineIsBlank = false;
         }
-         /**************************Website Build Code ******************************************************/
-        if (c == '\n' && currentLineIsBlank) {
-         
-          if (authentificated)
-            SendOKpage(client);
-            if (digitalRead(7) == HIGH){
-
-          else
-            SendAuthentificationpage(client);  
-          break;
+        /**************************PIR SENSOR CODE******************************************************/  
+        pir_pinstate = digitalRead(pir_pin); 
+        if (pir_value == HIGH) {
+          digitalWrite(pir_led, HIGH);
+          if (pir_value== LOW) {
+            Serial.println("Motion detected!");
+            pir_value = HIGH;
+          }
+        } else {
+          digitalWrite(pir_led, LOW); // turn LED OFF
+          if (pir_value == HIGH){
+            // we have just turned of
+            Serial.println("Motion ended!");
+            // We only want to print on the output change, not state
+            pir_value = LOW;
+          }
         }
         /**************************Control Code ******************************************************/
          if (current_line_is_first && c == '=') {
@@ -162,10 +159,10 @@ if (pir_value == HIGH) {
           }
         }
         if (!strcmp(command, "1")/*||(readingA == LOW)*/){
-          digitalWrite(Lt_DnStrs_Lvng_A_Out, true);
+          digitalWrite(rlyA_pin, true);
           }
           else if (!strcmp(command, "0")){
-                digitalWrite(Lt_DnStrs_Lvng_A_Out,false);
+                digitalWrite(rlyA_pin,false);
           }
       }
     }

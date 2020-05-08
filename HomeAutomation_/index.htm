@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Automation</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class ="Maincontainer">
+            <div class="leftpane-ltgrey">
+            <h1>Home Command Center</h1>
+        </div>
+
+
+        <div class="pane-left-50">
+        <form  method=get name=formA>
+        <script>
+        if (digitalRead(7) == HIGH) {
+        document.getElementById("rlyA").value =0;
+        document.getElementByID("rlyA").innerHTML="Turn Off"
+        }
+        else {
+        document.getElementById("rlyA").value =1;
+        document.getElementByID("rlyA").innerHTML="Turn Onn"
+        }
+        </script>
+        <button class="btn2" id="rlyA" name="rlyA" value=0 type=submit>Turn Off</button>
+
+        </div>
+
+
+
+
+        </div>
+    </body>
+
+    </html>
